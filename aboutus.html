@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+<head> 
+	<meta charset = "UTF-8"> 
+	<meta name = "viewport" content = "width: device-width, initial-scale = 1.0"> 
+	<link rel = "stylesheet" type = "text/css" href = "../CSS/new_image.css"> 
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+	<script src = "../JS/new_image.js"></script> 
+	<title> New Image Beauty Salon  </title> 
+</head> 
+<body> 
+	<div class = "wrapper">  
+		<header>
+			<nav> 
+				<a class = "nav-button">&#9776;</a>
+				<h1 id = "logo"> <a href = "index.html"> <em> NEW IMAGE </em> </a></h1>
+				<ul class = "navigation_bar">
+					<li><a href = "index.html" > Home </a></li> 
+					<li id  = "services_link">
+						<a href = "#" > Services&#9660;</a>
+						<ul id = "services_submenu">
+							<li><a href = "nails.html"> Nail Design </a><li>
+							<li><a href = "styles.html"> Styles</a></li>
+							<li><a href = "facials.html"> Facial </a></li>
+							<li><a href = "products.html"> Products </a></li> 
+						</ul> 
+					</li> 
+					<li><a href = "aboutus.html" > About Us </a></li> 
+					<li><a href = "contact.html" > Contact </a></li> 
+				</ul>
+			</nav> 
+		</header>
+	</div>
+
+
+<section class = "wrapper">
+
+	<section class = "wrapper">
+		<h3 id = "about_us_header"> About Us </h3> 
+	</section>
+
+	<article> 
+		<div class = "about_us_menu"> 
+			<div class = "about_us_submenu"> 
+				<img id = "about_us_img" src = "../Images/scowling_girl.jpg"> 
+				<p id = "about_us_information"> 
+					With over 15 years of experience, it's safe to say we're experts at our craft. Our stylists are the best and most versatile found in the Los Angeles area. Their expertise spans across hair design (even for special events!), nail design, facial treatments and even eyebrow sculpting.  We value excellence in our work as well as our relationships with customers. You won't find our amazing quality of work with prices this low and stylists this friendly. So come stop by today or schedule an appointment, you won't regret it. 
+				</p> 
+			</div> 
+		</div> 
+	</article> 
+
+</section>
+
+<section class = "wrapper"> 
+	<footer>
+		<div id = "contact-info"> 
+			<ul> 
+				<li>New Image Beauty Salon</li> 
+				<li>South Boulevard Los Angeles, CA</li> 
+				<li>1 (800) NEW - IMAGE </li>
+			</ul>
+		</div> 
+	</footer> 
+</section>
+
+</html>
+
+<style>
+
+#about_us_header
+{
+
+	width: 100%;
+	font-size: 53px;
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;	
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+	color: gold;
+	position: relative;
+	top: 55px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about_us_img
+{
+	width: 100%;
+	height: 650px;
+	border: 1px solid rgba(255,255,255,0.65);
+	/*margin-left: 80px;*/
+}
+
+#about_us_information
+{
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	word-wrap: break-word;
+	text-align: center;
+	color: white;
+	text-shadow: 1px -1px 1px black;
+	font-weight: 100;
+	font-size: 18px;
+	word-spacing: 1px;
+	position: absolute;
+	bottom: 30px;
+	float: left;
+	width: 50%;
+	border: 1px solid white;
+	border-radius: 10%;
+	padding: 10px;
+	box-shadow: 4px 1px 15px white;
+	margin-left:10px;
+}
+
+nav
+{
+	margin-top: -63px;
+}
+
+@media screen and (max-width: 1169px)
+{
+	#about_us_information
+	{
+		font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+		word-wrap: break-word;
+		text-align: center;
+		color: white;
+		text-shadow: 1px -1px 1px black;
+		font-weight: 100;
+		font-size: 18px;
+		word-spacing: 1px;
+		position: absolute;
+		bottom: -30%;
+		float: left;
+		width: 30%;
+		border: 1px solid white;
+		border-radius: 10%;
+		padding: 10px;
+		box-shadow: 4px 1px 15px white;
+		margin-left:10px;
+	}
+
+}
+
+@media screen and (max-width: 967px)
+{
+	#about_us_information
+	{
+		/*bottom: -45px;*/
+	}
+}
+
+@media screen and (max-width:  800px)
+{
+	#about_us_information
+	{
+		bottom: -15px;
+		font-size: 16px;
+		width: 80%;
+		margin-left: 10%;
+		background-color: rgba(0,0,0,0.75);
+	}
+}
+
+@media screen and (max-width:  600px)
+{
+	#about_us_information
+	{
+		bottom: -105px;
+		font-size: 16px;
+		float: none;
+		width: 80%;
+		margin-left: 50px;
+		background-color: rgba(0,0,0,0.75);
+	}
+}
+
+@media screen and (max-width: 500px)
+{
+	#about_us_img
+	{
+		content: url("../Images/scowling_girl_medium.jpg");
+	}
+
+	#about_us_information
+	{
+		bottom: -105px;
+		font-size: 16px;
+		float: none;
+		width: 80%;
+		margin-left: 30px;
+		background-color: rgba(0,0,0,0.75);
+	}
+}
+
+</style>

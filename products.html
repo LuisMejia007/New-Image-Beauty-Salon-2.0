@@ -1,0 +1,269 @@
+<!DOCTYPE html> 
+<html lang = "en">
+<head> 
+	<meta charset = "UTF-8"> 
+	<meta name = "viewport" content = "width: device-width, initial-scale = 1.0"> 
+	<link rel = "stylesheet" type = "text/css" href = "../CSS/new_image.css"> 
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "../JS/new_image.js"></script> 
+	<title> New Image Beauty Salon </title> 
+</head> 
+<body> 
+	<div class = "wrapper"> 
+		<header>
+			<nav>
+				<a class = "nav-button">&#9776;</a>
+				<h1 id = "logo"> <em> NEW IMAGE </em> </h1>
+				<ul class = "navigation_bar">
+					<li><a href = "index.html" > Home </a></li> 
+					<li id  = "services_link">
+						<a href = "#" > Services&#9660;</a>
+						<ul id = "services_submenu">
+							<li><a href = "nails.html"> Nail Design </a><li>
+							<li><a href = "styles.html"> Styles</a></li>
+							<li><a href = "facials.html"> Facial </a></li>
+							<li><a href = "products.html"> Products </a></li> 
+						</ul> 
+					</li> 
+					<li><a href = "aboutus.html" > About Us </a></li> 
+					<li><a href = "contact.html" > Contact </a></li> 
+				</ul>
+			</nav>
+		</header> 
+	</div>
+</body>
+
+<section class = "wrapper">
+	<section class = "wrapper"> 
+		<h3 id = "products_header"> Products </h3> 
+	</section> 
+	<article> 
+		<div class =  "hairspray_menu"> 
+			<h3 id = "hairspray_header"> Hairsprays </h3> 
+			<img id = "hairspray_image" src = "../Images/tresemme.jpg"> 
+			<div id = "hairspray_list_menu"> 
+				<ul id = "hairspray_list"> 
+					<li> Tresemme Expert Selection </li>
+					<li> Keratase </li> 
+					<li> OSIS+ </li> 
+					<li> BigSexyHair </li> 
+					<li> CHI </li>
+				</ul> 
+			</div>  
+		</div> 
+	</article> 
+		<div class = "gel_menu"> 
+			<h3 id = "gel_header"> Gels </h3> 
+			<img id = "gel_image" src = "../Images/jonny_b_gel.jpg"> 
+			<div id = "gel_list_menu">
+				<ul id = "gel_list">
+					<li> Johnny B. </li>
+					<li> HairEvolution </li> 
+					<li> Gelatica </li>
+					<li> L'Oreal Hair Studio </li>
+					<li> Goldwell For Men </li>  
+				</ul>
+			</div> 
+		</div> 
+	<article> 
+		<div class = "shampoo_menu"> 
+			<h3 id = "shampoo_header"> Shampoos </h3> 
+			<img id = "shampoo_image" src = "../Images/big_sexy_hair.jpg" > 
+			<div id = "shampoo_list_menu">
+				<ul id = "shampoo_list"> 
+					<li> Tresemme</li>
+					<li> Madison Reed </li> 
+					<li> Paul Mitchell </li>
+					<li> Goldwell </li>
+					<li> Redken </li>
+				</ul> 
+			</div>
+		</div> 
+	</article> 
+
+	<article> 
+		<div class = "mousse_menu"> 
+			<h3 id = "mousse_header"> Mousse </h3>
+			<img id = "mousse_image" src = "../Images/mousse.png"> 
+			<div id = "mousse_list_menu"> 
+				<ul id = "mousse_list"> 
+					<li> Nexxus </li> 
+					<li> Keratase </li> 
+					<li> Syoss </li> 
+					<li> Sebastian Professional </li>
+					<li> Redist </li> 
+				</ul>
+			</div>
+		</div> 
+	</article> 
+</section>
+
+
+<div class = "wrapper"> 
+	<footer>
+		<div id = "contact-info"> 
+			<ul> 
+				<li>New Image Beauty Salon</li> 
+				<li>South Boulevard Los Angeles, CA</li> 
+				<li>1 (800) NEW - IMAGE </li>
+			</ul>
+		</div> 
+	</footer> 
+</div>
+</html> 
+
+<style>
+nav
+{
+	margin-top: -63px;
+} 
+
+#products_header
+{
+		font-size: 53px;
+		font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;	
+		text-transform: uppercase;
+		font-weight: 100;
+		text-align: center;
+		color: gold;
+		position: relative;
+		top: 55px;
+}
+
+#hairspray_header, #gel_header, #shampoo_header, #mousse_header
+{
+	text-align: center;
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 25px;
+	color: white;
+	text-shadow: 5px 2px 5px black;
+	font-weight: 100;
+	background-color: gold;
+	padding: 40px 10px 40px 10px;
+	background-image: url("../Images/hairspray.jpg");
+	background-size: cover;
+}
+
+#gel_header {background-image: url("../Images/gel.jpg"); background-size: cover; }
+#shampoo_header { background-image: url("../Images/shampoo.jpg"); background-size: cover;}
+#mousse_header { background-image: url("../Images/mousse_hair.jpg"); background-size: cover;}
+
+.hairspray_menu, .gel_menu, .shampoo_menu, .mousse_menu
+{
+	float: left; 
+	width: 50%;
+	margin: 0 auto;
+	background-color: black;
+
+}
+
+
+
+#hairspray_image, #gel_image, #shampoo_image, #mousse_image
+{
+	margin: 5px;
+	margin-left: 30%;
+	margin-right: 5px;
+	border-radius: 5%;
+}
+
+#hairspray_list, #gel_list, #shampoo_list, #mousse_list
+{
+	color: gold;
+	list-style: none;
+	text-align: center;
+	font-size: 20px;
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	font-weight: 100;
+
+}
+#hairspray_image, #mousse_image
+{
+	background-color: gold;
+}
+
+@media screen and (max-width: 1111px)
+{
+	.hairspray_menu, .gel_menu, .shampoo_menu, .mousse_menu
+	{
+		float: left; 
+		width: 50%;
+		margin: 0 auto;
+		background-color: black;
+	}
+
+	#hairspray_image, #gel_image, #shampoo_image, #mousse_image
+	{
+		margin: 5px;
+		margin-left: 60px;
+		margin-right: 0;
+		border-radius: 5%;
+	}
+}
+
+@media screen and (max-width:  699px)
+{
+	.hairspray_menu, .gel_menu, .shampoo_menu, .mousse_menu
+	{
+		float: left; 
+		width: 100%;
+		margin: 0 0;
+		background-color: black;
+	}
+
+	#hairspray_header, #gel_header, #shampoo_header, #mousse_header
+	{
+		padding: 60px 10px;
+	}
+}
+
+
+@media screen and (max-width: 360px)
+{
+	.hairspray_menu, .gel_menu, .shampoo_menu, .mousse_menu
+	{
+		float: left; 
+		width: 100%;
+		margin: 0 0;
+		background-color: black;
+	}
+
+	#hairspray_header, #gel_header, #shampoo_header, #mousse_header
+	{
+		padding: 60px 50px;
+	}
+
+		#hairspray_image, #gel_image, #shampoo_image, #mousse_image
+	{
+		margin: 5px;
+		margin-left: 30px;
+		margin-right: 0;
+		border-radius: 5%;
+	}
+}
+
+@media screen and (max-width: 320px)
+{
+	.hairspray_menu, .gel_menu, .shampoo_menu, .mousse_menu
+	{
+		float: left; 
+		width: 100%;
+		margin: 0 0;
+		background-color: black;
+	}
+
+	#hairspray_header, #gel_header, #shampoo_header, #mousse_header
+	{
+		padding: 60px 50px;
+	}
+
+		#hairspray_image, #gel_image, #shampoo_image, #mousse_image
+	{
+		margin: 5px;
+		margin-left: 10px;
+		margin-right: 0;
+		border-radius: 5%;
+	}
+}
+</style> 

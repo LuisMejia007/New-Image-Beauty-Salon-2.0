@@ -1,0 +1,231 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width: device-width, initial-scale = 1.0"> 
+	<link rel = "stylesheet" type = "text/css" href = "../CSS/new_image.css"> 
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src = "../JS/new_image.js"></script> 
+	<title> New Image Beauty Salon </title>
+</head>
+
+<body> 
+	<div class = "wrapper">
+		<header>
+			<nav>
+					<a class = "nav-button">&#9776;</a>
+					<h1 id = "logo"> <a href = "index.html"> <em> NEW IMAGE </em> </a> </h1>
+					<ul class = "navigation_bar">
+						<li><a href = "index.html" > Home </a></li> 
+						<li id  = "services_link">
+							<a href = "#" > Services&#9660;</a>
+							<ul id = "services_submenu">
+								<li><a href = "nails.html"> Nail Design </a><li>
+								<li><a href = "styles.html"> Styles</a></li>
+								<li><a href = "facials.html"> Facial </a></li>
+								<li><a href = "products.html"> Products </a></li> 
+							</ul> 
+						</li> 
+						<li><a href = "aboutus.html" > About Us </a></li> 
+						<li><a href = "contact.html" > Contact </a></li> 
+					</ul>
+			</nav>
+		</header>
+	</div>
+
+<div class = "wrapper"> 
+		<h3 id = "nail_design_header">  Nail Design  </h3> 
+</div> 
+
+<section class = "wrapper"> 
+	<div id = "foot_spa_menu"> 
+		<h4 id = "foot_spa_header"> Foot Spa </h4> 
+		<div class = "foot_spa_info"> 
+			<p>
+				We're the best in our area in complete foot treatment! Heated foot treatment, skin moisturization, and complete healthy skin maintenance with the use of the industry's best products! Come visit us today!
+			</p> 
+		</div>
+		<h3 id = "foot_spa_btn"> More Info </h3> 
+	</div> 
+	<div id = "manicure_design_menu">
+		<h4 id  = "manicure_header"> Manicures </h4>
+		<div class = "manicure_info"> 
+			<p> 
+				We don't only do hair, we do nails too! We're passionate when it comes to designing our customers nails with either the current trends or even a design they may come up with on their own! 
+			</p>
+		</div> 
+		<h3 id = "manicure_btn"> More Info </h3>
+	</div>
+
+	<div id = "peticure_design_menu"> 
+		<h4 id  = "peticure_header"> Peticures </h4> 
+		<div class = "peticure_info"> 
+			<p>
+				Designing your nails doesn't just stop at your hands, we got your toe-nails too. Come in today and choose your design!
+			</p> 
+		</div>
+		<h3 id = "peticure_btn"> More Info </h3>
+	</div> 
+</section> 
+
+<div class = "wrapper"> 
+	<footer>
+		<div id = "contact-info"> 
+			<ul> 
+				<li>New Image Beauty Salon</li> 
+				<li>South Boulevard Los Angeles, CA</li> 
+				<li>1 (800) NEW - IMAGE </li>
+			</ul>
+		</div> 
+	</footer> 
+</div>
+
+</body>
+</html>
+<style>
+nav
+{
+	z-index: 1; 
+	position: fixed;
+	padding-top: 10px;
+	margin: -63.5px auto 5px auto;
+}
+
+#nail_design_header
+{
+	font-size: 53px;
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif; 
+	font-weight: 100;
+	text-align: center;
+	color: gold;
+	position: relative;
+	top: 60px;
+	text-transform: uppercase;
+
+}
+
+#manicure_design_menu, #peticure_design_menu, #foot_spa_menu
+{
+	position: relative;
+	width: 23.1%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	border: solid 1px gold;
+	float: left;
+	padding: 5%;
+	border-radius: 15%;
+	-moz-border-radius: 15%;
+	-webkit-border-radius: 15%;
+	-o-border-radius: 15%;
+	height: 400px;
+	margin: 5px auto;
+}
+#manicure_design_menu { background-image: url('../Images/many_nails.jpg'); }
+#peticure_design_menu { background-image: url('../Images/peticure_image.jpg'); background-size: cover; }
+#foot_spa_menu { background-image: url('../Images/foot_spa.jpg'); background-size: cover;}
+
+
+#foot_spa_header, #manicure_header, #peticure_header
+{
+	text-align: center;
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	color: white;
+	text-shadow: 2px 1px 5px black;
+	letter-spacing: 5px; 
+	font-weight: 100;
+	font-size: 200%;
+	float: left;
+	width: 100%;
+	border-bottom: solid 2px gold;
+	margin: 2px auto;
+}
+
+.manicure_info, .peticure_info, .foot_spa_info
+{
+	display: none; 
+	position: absolute;
+	left: 0;
+	bottom: 0; 
+	background-color: rgba(0, 0, 0, 0.75);
+	border: outset 1px gold;
+	padding: 20px;
+	border-radius: 30%;
+	-moz-border-radius: 30%;
+	-webkit-border-radius: 30%;
+	-o-border-radius: 30%;
+
+}
+
+.manicure_info p, .peticure_info p, .foot_spa_info p
+{
+	text-align: center; 
+	font-family:Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	text-shadow: 5px 2px 5px black;
+	padding: 10%;
+	color: white;
+	border: solid 1px white;
+	margin: 10px;
+	border-radius: 30%;
+	-moz-border-radius: 30%;
+	-webkit-border-radius: 30%;
+	-o-border-radius: 30%;
+	padding: 20px;
+}
+
+#foot_spa_btn, #manicure_btn, #peticure_btn
+{
+	font-family:Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	text-align: center;
+	text-shadow: 5px 2px 5px black;
+	letter-spacing: 3px;
+	color: white;
+	position: relative;
+}
+#foot_spa_btn:hover, #manicure_btn:hover, #peticure_btn:hover
+{
+	cursor: pointer;
+	text-shadow: 2px 1px 5px white;
+	transition: text-shadow 2s;
+	-webkit-transition: text-shadow 2s;
+	-moz-transition: text-shadow 2s;
+	-o-transition: text-shadow 2s;
+}
+
+@media screen and (max-width: 851px)
+{
+	#manicure_design_menu, #peticure_design_menu, #foot_spa_menu
+	{
+		float: none;
+		width: 50%;
+		margin: 10px auto;
+	}
+	#foot_spa_menu
+	{
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	#nail_design_header
+	{
+		font-size: 40px;
+	}
+	#manicure_design_menu, #peticure_design_menu, #foot_spa_menu
+	{
+		float: left;
+		width: 100%;
+		margin: 10px auto;
+	}
+
+	#foot_spa_menu
+	{
+		margin-top: 30px;
+	}
+}
+
+#contact-info
+{
+	margin-top: 70px;
+}
+</style>

@@ -1,0 +1,197 @@
+<!DOCTYPE html> 
+<html lang = "en"> 
+<head> 
+	<meta charset = "UTF-8"> 
+	<meta name = "viewport" content = "width: device-width, initial-scale = 1.0"> 
+	<link rel = "stylesheet" type = "text/css" href = "../CSS/new_image.css"> 
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+	<script src = "../JS/new_image.js"></script> 
+	<title> New Image Beauty Salon  </title> 
+</head> 
+<body> 
+	<div class = "wrapper">  
+		<header>
+			<nav> 
+				<a class = "nav-button">&#9776;</a>
+				<h1 id = "logo"> <a href = "index.html"> <em> NEW IMAGE </em> </a></h1>
+				<ul class = "navigation_bar">
+					<li><a href = "index.html" > Home </a></li> 
+					<li id  = "services_link">
+						<a href = "#" > Services&#9660;</a>
+						<ul id = "services_submenu">
+							<li><a href = "nails.html"> Nail Design </a><li>
+							<li><a href = "styles.html"> Styles</a></li>
+							<li><a href = "facials.html"> Facial </a></li>
+							<li><a href = "products.html"> Products </a></li> 
+						</ul> 
+					</li> 
+					<li><a href = "aboutus.html" > About Us </a></li> 
+					<li><a href = "contact.html" > Contact </a></li> 
+				</ul>
+			</nav> 
+		</header>
+	</div>
+
+
+	<section class = "wrapper"> 
+	<section class = "wrapper"> 
+		<h3 id = "contact_header"> Contact</h3> 
+	</section> 
+		<article>
+			<div class = "contact_menu"> 
+				<div id = "contact_info_menu"> 
+					<p id = "contact_information"> 
+						Email: newimage_beauty@example.com <br> 
+						Phone: 1 (800) NEW - IMAGE <br> 
+						Address: South Boulevard Los Angeles, CA
+					</p>
+				</div>
+			</div> 
+		</article>
+	</section> 
+
+	<section class = "wrapper"> 
+	<footer>
+		<div id = "contact-info"> 
+			<ul> 
+				<li>New Image Beauty Salon</li> 
+				<li>South Boulevard Los Angeles, CA</li> 
+				<li>1 (800) NEW - IMAGE </li>
+			</ul>
+		</div> 
+	</footer> 
+</section>
+</body> 
+</html>
+
+<style> 
+
+#contact_header
+{
+	width: 100%;
+	font-size: 53px;
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;	
+	text-transform: uppercase;
+	font-weight: 100;
+	text-align: center;
+	color: gold;
+	position: relative;
+	top: 55px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact_menu
+{
+	width: 100%;
+	margin:  0 auto;
+}
+
+#contact_info_menu
+{
+	position: relative;
+	bottom: 10px;
+	float: left;
+	border: 1px solid white;
+	border-radius: 5%;
+	width: 60%;
+	margin: 0px 0px 0px 60px;
+	padding: 300px 200px;
+	background-color: rgba(0,0,0, 0.55);
+	background-image: url("../Images/hair_cut.jpg");
+	background-size: cover;
+}
+#contact_information
+{
+	font-family: Verdana, Arial, 'Helvetica Neue', Helvetica, sans-serif;
+	word-wrap: break-word;
+	text-align: center;
+	color: white;
+	text-shadow: 1px -1px 1px black;
+	border: 1px solid gold;
+	border-radius: 15%;
+	padding: 15px;
+	background-color: rgba(255, 190, 10, 0.75);
+	border-color: white;
+	box-shadow: 1px 2px 5px black;
+}
+
+
+@media screen and (max-width: 860px)
+{
+	#contact_info_menu
+	{
+		width: 50%;
+		margin: 0px 0px;
+		background-image: url("../Images/hair_cut_medium.jpg");
+	}
+}
+
+@media screen and (max-width: 760px)
+{
+	#contact_info_menu
+	{
+		width: 40%;
+		margin: 0px 0px 0px 20px;
+	}
+}
+
+@media screen and (max-width: 650px)
+{
+	#contact_info_menu
+	{
+		width: 40%;
+		margin: 0px 0px 0px 2px;
+	}
+}
+}
+
+@media screen and (max-width: 500px)
+{
+	#contact_info_menu
+	{
+		width: 30%; 
+		margin: 0 0;
+		background-image: url("../Images/hair_cut_small.jpg");
+	}
+
+	#contact_information
+	{
+		width: 100%;
+		font-size: 20px;
+		padding: 40px;
+		margin: 10px 0px;
+	}
+}
+
+@media screen and (max-width:  420px)
+{
+	#contact_info_menu
+	{
+		width: 80%; 
+		margin: 0 0;
+		background-image: url("../Images/hair_cut_smaller.jpg");
+	}
+
+	#contact_information
+	{
+		width: 100%;
+		word-wrap: none;
+		font-size: 20px;
+		padding: 40px;
+		margin: 10px auto;
+	}
+
+	#contact_header
+	{	
+		text-align: center;
+		left: 170px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+nav
+{
+	margin-top: -63px;
+}
+</style>
