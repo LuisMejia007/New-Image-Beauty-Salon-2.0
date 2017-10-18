@@ -13,10 +13,10 @@ $(document).ready(function(){
 
 var image_array = 
 [
-	"../Images/btysalon.jpg", 
-	"../Images/Peticure.jpg", 
-	"../Images/hair_cut.jpg",
-	"../Images/scowling_girl_large.jpg"
+	"Image/btysalon.jpg", 
+	"Image/Peticure.jpg", 
+	"Image/hair_cut.jpg",
+	"Image/scowling_girl_large.jpg"
 ];
 var current_image = 0;
 function prevImg()
