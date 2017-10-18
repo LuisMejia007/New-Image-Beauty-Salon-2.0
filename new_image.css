@@ -472,7 +472,7 @@ body
 	margin-top: 8px;
 	margin-right: auto; margin-left: auto;
 	margin-bottom: 1px;
-	background-image: url("../Images/women_background_cover.jpg");
+	background-image: url("Image/women_background_cover.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -488,7 +488,7 @@ body
 	text-align: center; 
 	border: 2px solid gold;
 	margin: 0px auto;
-	background-image: url("../Images/background_men_cover.jpg");
+	background-image: url("Image/background_men_cover.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -504,7 +504,7 @@ body
 	text-align: center; 
 	border: 2px solid gold;
 	margin: 1px auto;
-	background-image: url("../Images/kid_background.jpg");
+	background-image: url("Image/kid_background.jpg");
 	background-repeat: no-repeat;
 	background-size:100% 100%;
 }
@@ -635,13 +635,13 @@ body
 	}
 	#women_menu_button
 	{
-		background-image: url("../Images/women_background.jpg");
+		background-image: url("Image/women_background.jpg");
 		background-size: 100% 100%;
 	}
 
 	#men_menu_button
 	{
-		background-image: url("../Images/background_men.jpg");
+		background-image: url("Image/background_men.jpg");
 		background-size: cover;
 	}
 }
