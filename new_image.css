@@ -1,0 +1,813 @@
+body
+{
+	background-color:black;
+}
+
+
+.wrapper
+{
+	margin: 0 0;
+	width: 100%;
+	padding:0;
+}
+
+#logo
+{
+	float:left;
+	color: black;
+	margin-bottom: 5px;
+	margin-top: 10px;
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	border-style: solid;
+	padding: 4px;
+	/*margin-right: auto;*/
+	margin-right: 100px;
+}
+
+/*** Navigation Bar Floating SubMenu (Hover Over Services) ***/
+#services_submenu
+{
+	display: none;
+	position: absolute;
+	list-style-type: none;
+	margin:0;
+	padding: 0;
+	background-color: #42474f;
+	border-radius: 5%;
+	padding-bottom: 5px;
+	opacity: 0.95;
+}
+
+#services_submenu  li
+{
+	display: block;
+	float: left;
+	margin: auto;
+	width: 100%;
+}
+
+
+#services_submenu a
+{
+	font-size: 16px;
+	background-color: #42474f;
+	border-bottom: solid #42474f 2px;
+	color: white;
+}
+
+#services_submenu a:hover
+{
+	color: 	#a0abbc; 
+	transition: color 0.1s;
+
+}
+
+
+#services_link:hover #services_submenu
+{
+	display: block;
+}
+
+.nav-button
+{
+	visibility: hidden;
+	float: right;
+}
+
+/*************** Index.html (Home Page) ********************************/
+.slides_container
+{
+	margin: 0;
+	padding: 0;
+}
+.slides_container img
+{
+	background-color: black;
+}
+
+#bwd_btn
+{
+	position: absolute;
+	position: relative;
+	cursor: pointer;
+	left: 35%;
+	font-size: 40px;
+	opacity: 0.65;
+	color: white;
+}
+
+
+#fwd_btn
+{
+	position: absolute;
+	position: relative;
+	cursor: pointer;
+	left: 55%;
+	font-size: 40px;
+	opacity: 0.65;
+	color: white;
+
+}
+
+#bwd_btn:hover, #fwd_btn:hover
+{
+	color: yellow;
+}
+
+
+#welcome_header
+{
+	position: absolute;
+	color: white;
+	opacity: 0.75;
+	font-family: Avantgarde, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 53px;
+	font-weight: 100;
+	text-align: center;
+	left: 30%;
+	right: 30%;
+	top: 40%;
+
+}
+
+
+
+
+.manicure_pane, .styles_pane, .cuts_pane, .product_pane
+{
+	margin: 0px auto;
+	width: 25%;
+	background-color: black; 
+	border-bottom: solid 1px black;
+	float: left;
+	text-align: center;
+}
+
+.manicure_pane a, .styles_pane a, .cuts_pane a, .product_pane a
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+}
+
+.manicure_pane h2, .__pane h2, .cuts_pane h2, .product_pane h2
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+	border-bottom: solid 1px black;
+}
+
+
+
+#manicures_header, #styles_header, #cuts_header, #products_header
+{
+	font-weight: 100; 
+}
+
+#manicureImg, #blowDryingImg, #eyebrow_threading_img, #productImg
+{
+	width: 100%;
+}
+
+
+
+.manicure_pane:hover, .styles_pane:hover, .cuts_pane:hover, .product_pane:hover
+{
+	cursor:pointer;
+	color: gold;
+	border-bottom: solid 1px gold;
+	transition: color 1s, border-bottom 1s; 
+}
+
+.manicure_pane:hover a , .styles_pane:hover a , .cuts_pane:hover a , .product_pane:hover a 
+{
+	cursor:pointer;
+	color: gold;
+	transition: color 1s; 
+}
+
+.manicure_pane:hover h2, .styles_pane:hover h2, .cuts_pane:hover h2, .product_pane:hover h2
+{
+	cursor:pointer;
+	color: gold;
+	border-bottom: solid 1px gold;
+	transition: color 1s, border-bottom 1s; 
+}
+
+.manicure_pane:hover img , .styles_pane:hover img , .cuts_pane:hover img, .product_pane:hover img
+{
+	cursor: pointer;
+	opacity: 0.65;
+	transition: opacity 1s; 
+}
+
+
+
+#contact-info
+{
+	width: 100%; 
+	float: left;
+	margin: 1 auto;
+	background-color: black;
+}
+
+#contact-info ul 
+{
+	list-style-type: none; 
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: white;
+	text-align: center;
+}
+
+#graphic 
+{
+	z-index: 1;
+	display: inline-block;
+	position: absolute;
+	background-color: white;
+	transform: skew(12deg);
+	margin: 0px 0px 1px -100px;
+	padding: 200px;
+}
+/*************** End of Index.html (Home Page) ********************************/
+
+
+/******************* Index.html Media Queries ********************************/
+@media screen and (max-width: 860px)
+{	
+	header nav ul
+	{
+		overflow: hidden;
+		width:100%;
+		margin:0 0;
+		height: 0;
+		float: right;
+		background-color: black;
+	}
+
+	header nav ul li
+	{
+		width:100%;
+		margin: 0px;
+		margin-left: 0%;
+		display: block;
+		border-bottom: 1px solid white;
+		background-color: black;
+		float: none;
+	}
+	header nav ul li a
+	{
+		display: block;
+		width:100%;
+		text-align: center;
+		margin:5 auto;
+		color: white;
+		padding: 10px;
+		font-size: 27px;
+	}
+
+	header nav ul.open
+	{
+		height: auto;
+	}
+
+
+	.nav-button
+	{
+		visibility: visible;
+		float:right;
+		/*margin-right: 2%;*/
+		font-size: 33px;
+		cursor:pointer;
+	}
+
+	.nav-button:hover
+	{
+		float:right;
+		margin-right:2%;
+		font-size: 33px;
+		cursor:pointer;
+		background-color: black;
+		color: white;
+	}
+
+
+
+	header nav ul.open li a:hover
+	{
+		background-color: black;
+		color: 	#a0abbc; 
+	}
+
+	#services_link:hover #services_submenu
+	{
+		display: none;
+	}
+	#services_submenu
+	{
+		display: none;
+		position: relative;
+		list-style-type: none;
+		margin:0;
+		padding: 0;
+		background-color: black;
+		border-radius: 5%;
+		padding-bottom: 5px;
+		z-index: 1;
+	}
+
+	#services_submenu  li
+	{
+		display: block;
+		float: left;
+		margin: auto;
+		width: 100%;
+	}
+
+
+	#services_submenu a
+	{
+		font-size: 22px;
+		text-align: center;
+		background-color: black;
+		color: white;
+	}
+
+	#logo
+	{
+		float:left;
+		color: black;
+		margin-bottom: 5px;
+		margin-top: 10px;
+		font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+		border-style: solid;
+		padding: 4px;
+		margin-right: auto;
+		
+	}
+
+
+} 
+
+@media screen and (min-width: 1366px)
+{
+	nav
+	{
+		width: 100%;
+		position: fixed; 
+		z-index: 1;
+		background-color: white;
+		margin: 100px auto 5px -8px;
+		border-bottom:solid 2px black;
+	}
+
+	nav ul
+	{
+		display: inline-block;
+		margin-left: 50%;
+		margin-top: -50%;
+	}
+	nav ul li
+	{
+		display:inline;
+		font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+		list-style: none; 
+		float: left;
+	}
+
+	.navigation_bar
+	{
+		margin-top: 10px;
+	}
+}
+
+@media screen and (max-width:  667px)
+{
+
+	.manicure_pane, .styles_pane, .cuts_pane, .product_pane
+	{
+		margin: 0px auto;
+		width: 50%;
+		background-color: black; 
+		border-bottom: solid 1px black;
+		float: left;
+	}
+
+	.manicure_pane img, .styles_pane img, .cuts_pane img, .product_pane img
+	{
+		height: 50%;
+		width: 50%;
+	}
+
+
+}
+
+@media screen and (max-width: 430px)
+{
+
+	.slides_container
+	{
+		height: 20%;
+	}
+
+	#slideshow
+	{
+		width: 100%;
+	}
+	.col1
+	{
+		width: 100%;
+	}
+
+
+	.manicure_pane, .styles_pane, .cuts_pane, .product_pane
+	{
+		margin: 0px auto;
+		width: 100%;
+		background-color: black; 
+		/*border-bottom: solid 1px black;*/
+		float: left;
+	}
+
+	.manicure_pane img, .styles_pane img, .cuts_pane img, .product_pane img
+	{
+		height: 50%;
+		width: 50%;
+	}
+
+}
+/******************************* EOF Index.html Media Queries ****************************/
+
+/*************************************** Styles.html **************************************/
+#styles_page_header
+{
+	text-align: center;
+	color: gold;
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	font-size: 53px;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin-top: 105px;
+	margin-bottom: 0px; 
+	margin-left: auto; margin-right:auto;
+}
+
+#women_menu_button
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	letter-spacing: 2px;
+	font-size: 75px;
+	font-weight: 100;
+	padding: 20px;
+	color: white;
+	text-align: center; 
+	border: 2px solid gold;
+	margin-top: 8px;
+	margin-right: auto; margin-left: auto;
+	margin-bottom: 1px;
+	background-image: url("../Images/women_background_cover.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#men_menu_button
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	letter-spacing: 5px;
+	font-size: 75px;
+	font-weight: 100;
+	padding: 20px;
+	color: white;
+	text-align: center; 
+	border: 2px solid gold;
+	margin: 0px auto;
+	background-image: url("../Images/background_men_cover.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#kids_menu_button
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	letter-spacing: 5px;
+	font-size: 75px;
+	font-weight: 100;
+	padding: 20px;
+	color: white;
+	text-align: center; 
+	border: 2px solid gold;
+	margin: 1px auto;
+	background-image: url("../Images/kid_background.jpg");
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+}
+
+#women_menu_button:hover, #men_menu_button:hover, #kids_menu_button:hover
+{
+	border: 2px solid black;
+	cursor: pointer;
+	background-color: gold; 
+	color: white;
+	box-shadow: 2px;
+	text-shadow: 2px 1px 5px black;
+	transition: background-color 1s, color 1s, border 1s;
+}
+
+.ironed_hair_pane, .wavy_hair_pane, .perm_hair_pane, .highlights_hair_pane
+{
+	background-color: black;
+	width: 25%;
+	float: left;
+	margin-top: 0px; 
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 0px; 
+}
+
+#ironed_hair_header, #wavy_hair_header, #perm_hair_header, #highlights_hair_header
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	text-align: center;
+	font-size:23px;
+	font-weight: 100;
+	color: white;
+	border-bottom: solid 1px black;
+}
+.ironed_hair_info, .wavy_hair_info,  .perm_hair_info, .highlights_hair_info
+{
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	margin-top: -50%;
+	visibility: hidden;
+	text-align: center;
+	color: gold;
+	text-shadow: 2px 2px 5px black;
+	font-size: 16px;
+}
+
+.ironed_hair_info.show, .wavy_hair_info.show, .perm_hair_info.show, .highlights_hair_info.show
+{
+	visibility: visible;
+}
+
+#straight_styled_img:hover, #wavy_styled_img:hover, #perm_hair_img:hover, #highlights_hair_img:hover
+{
+	opacity: 0.65;
+	transition: opacity 1s;
+}
+
+.info
+{
+	margin-top: 50%;
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	text-align:center;
+	color: white;
+	font-weight: 100;
+	border-bottom: solid 1px black;
+}
+
+#wavy_styled_img, #straight_styled_img,#perm_hair_img, #highlights_hair_img
+{
+	width:100%;
+}
+
+/** Women SubMenu Styling **/
+.ironed_hair_pane:hover, .wavy_hair_pane:hover, .perm_hair_pane:hover, .highlights_hair_pane:hover
+{
+	cursor: pointer;
+	border-bottom: solid 1px gold;
+	transition: border-bottom 1s;
+}
+.ironed_hair_pane:hover img , .wavy_hair_pane:hover img, 
+{
+	opacity: 0.75;
+}
+.ironed_hair_pane:hover #ironed_hair_header , .wavy_hair_pane:hover #wavy_hair_header, .perm_hair_pane:hover #perm_hair_header, .highlights_hair_pane:hover #highlights_hair_header
+{
+	color: gold;
+	border-bottom: solid 1px gold;
+	transition: color 1s, border-bottom 1s;
+}
+
+.ironed_hair_pane:hover .info , .wavy_hair_pane:hover .info, .perm_hair_pane:hover .info, .highlights_hair_pane:hover .info
+{
+	color: gold;
+	transition: color 1s;
+}
+
+/**  EOF Women Sub-Menu Styling**/
+
+/**** Mobile Devices Sub Menu ****/
+.women_submenu, .men_submenu, .kids_submenu
+{
+	display: none;
+}
+.women_style_menu, .men_style_menu, .kids_style_menu
+{
+	float: left;
+	width: 100%;
+	margin: 2px auto;
+}
+
+.women_submenu, .men_submenu, .kids_submenu
+{
+	display: none;
+}
+
+@media screen and (max-width: 860px)
+{	
+	.ironed_hair_pane, .wavy_hair_pane, .perm_hair_pane, .highlights_hair_pane
+	{	float: left;
+		width: 50%;
+	}
+
+	.ironed_hair_pane:hover, .wavy_hair_pane:hover, .perm_hair_pane:hover, .highlights_hair_pane:hover
+	{
+		float: left;
+		width: 50%;
+		border-bottom: none;
+	}
+	#women_menu_button
+	{
+		background-image: url("../Images/women_background.jpg");
+		background-size: 100% 100%;
+	}
+
+	#men_menu_button
+	{
+		background-image: url("../Images/background_men.jpg");
+		background-size: cover;
+	}
+}
+/******************************* EOF Styles.html ************************************/
+
+
+/******************************* Nail Design CSS ************************************/
+
+
+
+/**********************************EOF NailDesigns CSS***********************************/
+
+/********************* Styles.html Media Queries  **********************/
+@media screen and (min-width: 860px)
+{
+	.women_style_menu, .men_style_menu, .kids_style_menu
+	{
+		float: left;
+		width: 33%;
+	}
+	#women_menu_button, #men_menu_button, #kids_menu_button
+	{
+		margin: 0 auto;
+		transform: skew(-10deg);
+	}
+
+	.women_submenu
+	{
+		visibility: hidden;
+	}
+
+	.men_submenu, .kids_submenu
+	{
+		visibility: hidden;
+	}
+
+	.women_submenu.open
+	{
+		display: inline-block;
+		visibility: visible;
+		position: absolute;
+		transition: visibility 3s;
+		width:100%;
+	}
+	
+	.men_submenu.open
+	{	
+		display: inline-block;
+		visibility: visible;
+		position: absolute;
+		transition: visibility 3s;
+		right: 1%;
+		width: 100%;
+	}
+
+	.kids_submenu.open
+	{
+		display: inline-block;
+		visibility: visible;
+		position: absolute;
+		transition: visibility 3s;
+		right: 1%;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:  667px)
+{
+	.ironed_hair_pane, .wavy_hair_pane, .perm_hair_pane, .highlights_hair_pane
+	{
+		float: left;
+		width: 50%;
+	}
+
+	.ironed_hair_pane:hover, .wavy_hair_pane:hover, .perm_hair_pane:hover, .highlights_hair_pane:hover
+	{
+		float: left;
+		width: 50%;
+		border-bottom: none;
+	}
+}
+
+@media screen and (max-width: 430px)
+{
+	.ironed_hair_pane, .wavy_hair_pane, .perm_hair_pane, .highlights_hair_pane
+	{
+		float: left;
+		width: 50%;
+	}
+	.ironed_hair_pane:hover, .wavy_hair_pane:hover, .perm_hair_pane:hover, .highlights_hair_pane:hover
+	{
+		float: left;
+		width: 50%;
+		border-bottom: none;
+	}
+
+}
+/**************** EOF Style.html Media Queries ********************************/
+
+nav
+{
+	padding-top: 10px;
+	width: 100%;
+	position: fixed; 
+	z-index: 1;
+	background-color: white;
+	margin: -10px auto 5px auto;
+	border-bottom:solid 2px black;
+}
+
+nav ul
+{
+	display: inline-block;
+	margin-left: 50%;
+	margin-top: -50%;
+}
+nav ul li
+{
+	display:inline;
+	font-family: Verdana, Arial,'Helvetica Neue', Helvetica, sans-serif;
+	list-style: none; 
+	float: left;
+}
+
+nav a
+{
+	text-decoration: none;
+	font-size: 16px;
+	color: black;
+	margin-left:5px;
+	margin-right: 5px;
+	padding-right:5px;
+	padding-left:5px;
+	text-transform: uppercase;
+	border-bottom: solid white 2px;
+	transition: border-bottom 1s;
+}
+nav ul li a:hover
+{
+	background-color: white;
+	color: #8a95a8;
+	opacity: 0.95;
+	border-color: #8a95a8;
+}
+footer
+{
+		position: relative;
+}
+#contact-info
+{
+	margin-top: 100px;
+}
+
+/*nav
+{
+	padding-top: 10px;
+	width: 100%;
+	position: fixed; 
+	z-index: 1;
+	background-color: white;
+	margin: -120px auto 5px auto;
+	border-bottom:solid 2px black;
+}*/
+
+html, body 
+{
+	margin: 0 0;
+	padding: 0 0;
+}
